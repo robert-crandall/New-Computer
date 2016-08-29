@@ -6,3 +6,4 @@
 	cinst sql2008r2.cmdline -y
 	cinst vmwarevsphereclient -version 5.5.0
 	cinst btsync -y
+	cinst rsat -y
