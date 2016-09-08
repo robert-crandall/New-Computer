@@ -10,7 +10,7 @@
 
 # Utilities
 	cinst adobereader -y
-	cinst hashcheck -y
+	cinst hashtab -y
 	cinst paint.net -y
 	cinst cmder -version 1.3.0-beta -pre -y # This will need updating until the main branch has 1.3+
 	cinst windirstat -y
