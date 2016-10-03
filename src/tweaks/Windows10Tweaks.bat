@@ -10,7 +10,11 @@ REM *** Set Windows Explorer to start on This PC instead of Quick Access ***
 REM 1 = This PC, 2 = Quick access
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "LaunchTo" /t REG_DWORD /d 1 /f
 
-@rem Remove Homegroup
+REM *** Disable Frequent folders in Quick Access ***
+reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "ShowFrequent" /t REG_DWORD /d 0 /f
+
+
+REM *** Remove Homegroup ***
 sc config "HomeGroupProvider" start= disabled
 sc stop "HomeGroupProvider"
 
