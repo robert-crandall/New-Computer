@@ -50,10 +50,13 @@ $runwindowsupdatefile = "https://raw.githubusercontent.com/iRobie/New-Computer/m
 add-content $WindowsUpdatePS1 -value ((new-object net.webclient).DownloadString($runwindowsupdatefile))
 
 
+# Add instructions for manually running file
+add-content $WindowsUpdatePS1 -value "# To run updates manually, open the following link in a Click-Once compatible browser (IE or Edge):"
+add-content $WindowsUpdatePS1 -value "# http://boxstarter.org/package/nr/url?$WindowsUpdatefile"
+
 ## Run the boxstarter file
 START http://boxstarter.org/package/nr/url?$BoxstarterFile
 
 ## List of manual installs
 # Microsoft Office 365 Support and Recovery Assistant
 # Dism /online /enable-feature /featurename:NetFx3 /All /Source:E:\sources\sxs /LimitAccess
-
