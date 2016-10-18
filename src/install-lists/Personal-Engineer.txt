@@ -4,7 +4,7 @@
 	cinst greenshot -y
 	cinst rdcman -y
 	cinst sql2008r2.cmdline -y
-	cinst vmwarevsphereclient -version 5.5.0
+	cinst vmwarevsphereclient -version 5.5.0 -y
 	cinst btsync -y
 	cinst rsat -y
 	cinst p4v -y
