@@ -7,3 +7,4 @@
 	cinst vmwarevsphereclient -version 5.5.0
 	cinst btsync -y
 	cinst rsat -y
+	cinst p4v -y
