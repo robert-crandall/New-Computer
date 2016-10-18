@@ -1,5 +1,11 @@
 ## These are files I use regardless of what computer I'm on, but they aren't for computers I support 
 
+# Disable System Restore
+    disable-computerrestore -drive "C:\"
+
+# Disable hibernate
+    powershell -Command "Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'"
+
 # Development
 	cinst python2 -y
 	cinst pip -y
@@ -12,13 +18,14 @@
 	cinst adobereader -y
 	cinst hashtab -y
 	cinst paint.net -y
-	cinst cmder -version 1.3.0-beta -pre -y # This will need updating until the main branch has 1.3+
+	cinst cmder
 	cinst windirstat -y
 	cinst winscp -y
 	cinst putty.install -y
 	cinst lastpass -y
 	cinst sysinternals -y
 	cinst boxstarter -y
+	cinst dropbox -y
 
 # Runtimes
 	cinst javaruntime -y
