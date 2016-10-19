@@ -53,7 +53,7 @@
 	Get-Date
 	# Remove Onedrive		
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Remove-Onedrive.bat' -OutFile 'C:\tools\Remove-Onedrive.bat'		
-	start-process C:\tools\Remove-Onedrive.bat -Wait
+	start-process C:\tools\Remove-Onedrive.bat # This keeps stopping the deployment. Removed WAIT command. 
 
 	Write-host "Step 3 - Remove Modern Apps "
 	Get-Date
