@@ -1,17 +1,6 @@
 
-# Disable System Restore
-    disable-computerrestore -drive "C:\"
-
-# Disable hibernate
-    powershell -Command "Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'"
-
-
 # File Renamer
 	cinst ant-renamer -y
-
-# Development
-	cinst sourcetree -y
-	# cinst github -y # Caused problems with continuing installation
 
 # Digital entertainment
 	cinst calibre -y
@@ -23,7 +12,6 @@
 	cinst youtube-dl -y
 
 # Utilities
-	cinst sandboxie -y
 	cinst tightvnc -y
 	cinst btsync -y
 
