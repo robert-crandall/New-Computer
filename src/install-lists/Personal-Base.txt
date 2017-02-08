@@ -8,21 +8,21 @@
 
 # Development
 	cinst python2 -y
-	cinst pip -y
+	cinst pip -y --allow-empty-checksums
 	cinst visualstudiocode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
-	cinst PowerGUI -y
+	cinst PowerGUI -y --allow-empty-checksums
 
 # Utilities
 	cinst adobereader -y
 	cinst hashtab -y
-	cinst paint.net -y
+	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
 	cinst windirstat -y
 	cinst winscp -y
 	cinst putty.install -y
-	cinst lastpass -y
+	cinst lastpass -y --ignore-checksums
 	cinst sysinternals -y
 	cinst boxstarter -y
 	cinst dropbox -y

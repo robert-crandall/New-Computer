@@ -12,4 +12,3 @@
         cinst chocolatey -y
         choco upgrade chocolatey -y
         
-  if (Test-PendingReboot) { Invoke-Reboot }
