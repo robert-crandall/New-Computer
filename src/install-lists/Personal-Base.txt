@@ -4,25 +4,25 @@
     disable-computerrestore -drive "C:\"
 
 # Disable hibernate
-    Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'
+    powershell -Command "Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'"
 
 # Development
 	cinst python2 -y
-	cinst pip -y
+	cinst pip -y --allow-empty-checksums
 	cinst visualstudiocode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
-	cinst PowerGUI -y
+	cinst PowerGUI -y --allow-empty-checksums
 
 # Utilities
 	cinst adobereader -y
 	cinst hashtab -y
-	cinst paint.net -y
+	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
 	cinst windirstat -y
 	cinst winscp -y
 	cinst putty.install -y
-	cinst lastpass -y
+	cinst lastpass -y --ignore-checksums
 	cinst sysinternals -y
 	cinst boxstarter -y
 	cinst dropbox -y
@@ -34,6 +34,8 @@
 
 ## Personalization
 	cinst notepadplusplus.settings -y -params 'url=https://raw.githubusercontent.com/iRobie/notepadplusplussettings/master/' -Force
+
+	Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 	Write-host "Performing personalization tweaks. Can appear locked for a few minutes. 3 steps total: "
 	Get-Date
