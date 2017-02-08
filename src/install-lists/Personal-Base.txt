@@ -4,7 +4,7 @@
     disable-computerrestore -drive "C:\"
 
 # Disable hibernate
-    powershell -Command "Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'"
+    Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'
 
 # Development
 	cinst python2 -y
@@ -34,8 +34,6 @@
 
 ## Personalization
 	cinst notepadplusplus.settings -y -params 'url=https://raw.githubusercontent.com/iRobie/notepadplusplussettings/master/' -Force
-
-	Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 	Write-host "Performing personalization tweaks. Can appear locked for a few minutes. 3 steps total: "
 	Get-Date
