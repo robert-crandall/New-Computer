@@ -35,8 +35,9 @@
 ## Personalization
 	cinst notepadplusplus.settings -y -params 'url=https://raw.githubusercontent.com/iRobie/notepadplusplussettings/master/' -Force
 
-	Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-
+	Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force;
+	Install-ChocolateyPinnedTaskBarItem -TargetFilePath "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
+	
 	Write-host "Performing personalization tweaks. Can appear locked for a few minutes. 3 steps total: "
 	Get-Date
 	# Apply personalization tweaks
