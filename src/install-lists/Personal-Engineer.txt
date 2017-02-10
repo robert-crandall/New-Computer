@@ -9,4 +9,4 @@
 	cinst rsat -y
 	cinst p4v -y
 	cinst git.install -y
-	cinst github -y
+	cinst sourcetree -y
