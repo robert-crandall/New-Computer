@@ -12,3 +12,4 @@
 	cinst sourcetree -y
 	
 	cinst php -y
+	cinst microsoftteams -y
