@@ -9,7 +9,6 @@
 	cinst rsat -y
 	cinst p4v -y
 	cinst git.install -y
-	cinst sourcetree -y
 	
 	cinst php -y
 	cinst microsoftteams -y
