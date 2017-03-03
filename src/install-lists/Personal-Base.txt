@@ -24,7 +24,6 @@
 	cinst putty.install -y
 	cinst lastpass -y --ignore-checksums
 	cinst sysinternals -y
-	cinst boxstarter -y
 	cinst dropbox -y
 
 # Runtimes
