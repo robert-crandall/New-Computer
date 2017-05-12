@@ -12,8 +12,6 @@
 	cinst youtube-dl -y
 
 # Utilities
-	cinst tightvnc -y
-	cinst btsync -y
 
 	# Apply tweaks - PATH variables
 	if(!(Test-Path -Path "C:\tools\" )){
