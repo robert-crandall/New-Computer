@@ -11,6 +11,10 @@
 	cinst mkvtoolnix -y
 	cinst youtube-dl -y
 
+# Development
+	cinst php -y
+	cinst firefox -y
+	
 # Utilities
 
 	# Apply tweaks - PATH variables
