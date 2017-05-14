@@ -25,6 +25,7 @@
 	cinst lastpass -y --ignore-checksums
 	cinst sysinternals -y
 	cinst dropbox -y
+	cinst abc-update -y # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
 
 # Runtimes
 	cinst javaruntime -y
