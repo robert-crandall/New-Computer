@@ -13,6 +13,7 @@
 	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst PowerGUI -y --allow-empty-checksums
+	cinst git.install -y
 
 # Utilities
 	cinst adobereader -y
