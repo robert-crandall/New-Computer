@@ -1,6 +1,6 @@
 
 # File Renamer
-	cinst ant-renamer -y
+	cinst ant-renamer -y --ignore-checksum
 
 # Digital entertainment
 	cinst calibre -y
