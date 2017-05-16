@@ -22,3 +22,10 @@ Intel INF installation
 Intel® Rapid Storage Technology
 Nvidia driver
 ```
+
+### Themes
+Windows Store is hard to search for themes.
+* Check here: http://themepack.me/category/nature/
+* http://themepack.me/theme/yosemite/
+* http://themepack.me/theme/forest/
+* http://themepack.me/theme/bing/
