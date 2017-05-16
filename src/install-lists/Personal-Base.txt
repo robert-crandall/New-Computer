@@ -12,7 +12,6 @@
 	cinst visualstudiocode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
-	cinst PowerGUI -y --allow-empty-checksums
 	cinst git.install -y
 	Install-Module posh-git # Testing
 
@@ -74,8 +73,9 @@
 			(Get-Content C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1 -Encoding UTF8).replace('[\u2012\u2013\u2014]', '-') | Set-Content C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1
 
 		# Run the removal scripts
-			& "C:\tools\metro_Microsoft_modern_apps_to_target_by_name.ps1"
-			& "C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1"
+	Write-host "Photos isn't showing 3d mode. Leaving 3rd party apps enabled to see if this is the cause"
+		#	& "C:\tools\metro_Microsoft_modern_apps_to_target_by_name.ps1"
+		#	& "C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1"
 
 	# Create symbolic links
 	  Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Create-Symlinks.bat' -OutFile 'C:\tools\Create-Symlinks.bat'

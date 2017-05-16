@@ -21,8 +21,8 @@
 	if(!(Test-Path -Path "C:\tools\" )){
 		New-Item -ItemType directory -Path "c:\tools\"
 	}
-	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Personal-WHSFront-Tweaks.ps1' -OutFile 'C:\tools\Personal-WHSFront-Tweaks.ps1'
+	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Personal-Media-Tweaks.ps1' -OutFile 'C:\tools\Personal-Media-Tweaks.ps1'
 		# Remove illegal dashes
-			(Get-Content C:\tools\Personal-WHSFront-Tweaks.ps1 -Encoding UTF8).replace('[\u2012\u2013\u2014]', '-') | Set-Content C:\tools\Personal-WHSFront-Tweaks.ps1
+			(Get-Content C:\tools\Personal-Media-Tweaks.ps1 -Encoding UTF8).replace('[\u2012\u2013\u2014]', '-') | Set-Content C:\tools\Personal-Media-Tweaks.ps1
 
-	&  'C:\tools\Personal-WHSFront-Tweaks.ps1'
+	&  'C:\tools\Personal-Media-Tweaks.ps1'

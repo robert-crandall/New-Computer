@@ -9,6 +9,6 @@
   cinst notepadplusplus -y
   
 # Upgrade Chocolatey
-        cinst chocolatey -y
-        choco upgrade chocolatey -y
+  cinst chocolatey -y
+  choco upgrade chocolatey -y
         
