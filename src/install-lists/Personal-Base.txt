@@ -13,10 +13,9 @@
 	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst git.install -y
-	Install-Module posh-git # Testing
+	# Install-Module posh-git # Stops script for prompting. Need to find a way to install this.
 
 # Utilities
-	cinst adobereader -y
 	cinst hashtab -y
 	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
