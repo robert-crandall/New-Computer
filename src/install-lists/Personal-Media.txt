@@ -5,16 +5,13 @@
 # Digital entertainment
 	cinst calibre -y
 	cinst handbrake.install -y
-	cinst mediatab -y # Media info in properties
 	cinst mediainfo-cli -y
-	cinst mpc-hc -y
 	cinst QuickPar -y
 	cinst mkvtoolnix -y
 	cinst youtube-dl -y
 
 # Development
 	cinst php -y
-	cinst firefox -y
 	
 # Utilities
 

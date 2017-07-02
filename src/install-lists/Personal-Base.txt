@@ -6,16 +6,10 @@
 # Disable hibernate
     powershell -Command "Start-Process 'powercfg.exe' -Verb runAs -ArgumentList '/h off'"
 
-# Development
-	cinst python2 -y
-	cinst pip -y --allow-empty-checksums
+# Utilities
 	cinst visualstudiocode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
-	cinst git.install -y
-	# Install-Module posh-git # Stops script for prompting. Need to find a way to install this.
-
-# Utilities
 	cinst hashtab -y
 	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
@@ -23,9 +17,13 @@
 	cinst winscp -y
 	cinst putty.install -y
 	cinst lastpass -y --ignore-checksums
-	cinst sysinternals -y
 	cinst dropbox -y
 	cinst abc-update -y # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
+	cinst greenshot -y
+	cinst rdcman -y
+	cinst mediatab -y # Media info in properties
+	cinst mpc-hc -y
+	cinst firefox -y
 
 # Runtimes
 	cinst javaruntime -y
@@ -72,9 +70,8 @@
 			(Get-Content C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1 -Encoding UTF8).replace('[\u2012\u2013\u2014]', '-') | Set-Content C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1
 
 		# Run the removal scripts
-	Write-host "Photos isn't showing 3d mode. Leaving 3rd party apps enabled to see if this is the cause"
-		#	& "C:\tools\metro_Microsoft_modern_apps_to_target_by_name.ps1"
-		#	& "C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1"
+			& "C:\tools\metro_Microsoft_modern_apps_to_target_by_name.ps1"
+			& "C:\tools\metro_3rd_party_modern_apps_to_target_by_name.ps1"
 
 	# Create symbolic links
 	  Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Create-Symlinks.bat' -OutFile 'C:\tools\Create-Symlinks.bat'

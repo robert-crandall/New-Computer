@@ -1,14 +1,9 @@
 
 # Utilities
 	cinst fiddler4 -y
-	cinst greenshot -y
-	cinst rdcman -y
 	cinst sql2008r2.cmdline -y
 	cinst vmwarevsphereclient -version 5.5.0 -y
-	cinst btsync -y
 	cinst rsat -y
 	cinst p4v -y
-	
-	cinst php -y
+	cinst sysinternals -y
 	cinst microsoftteams -y
-	cinst visualstudio2017community -version 15.0.26206.20170228-rc6 -pre -y # https://chocolatey.org/packages/VisualStudio2017Community/

@@ -1,4 +1,3 @@
 
 # Game stuff
 	cinst steam -y
- 	cinst geforce-driver -y

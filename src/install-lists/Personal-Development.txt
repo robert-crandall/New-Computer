@@ -1,0 +1,8 @@
+# Development
+	cinst python2 -y
+	cinst pip -y --allow-empty-checksums
+	cinst git.install -y
+    cinst php -y
+	# cinst visualstudio2017community -version 15.0.26206.20170228-rc6 -pre -y # https://chocolatey.org/packages/VisualStudio2017Community/ # Leave this to manual install for now
+
+	# Install-Module posh-git # Stops script for prompting. Need to find a way to install this.

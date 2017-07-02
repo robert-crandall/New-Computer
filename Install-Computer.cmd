@@ -75,6 +75,17 @@ goto:eof
             Default {Write-Host "Skipping engineering lists"} 
           } 
 
+        Write-host "Is this a computer for development? (Default is no)" -ForegroundColor Yellow 
+          $readhost = Read-Host " ( y / n ) " 
+          Switch ($ReadHost) 
+          { 
+            Y {
+              Write-host "Getting development lists"; 
+              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Development.txt"
+              } 
+            Default {Write-Host "Skipping development lists"} 
+          } 
+
           Write-host "Is this a computer for gaming? (Default is no)" -ForegroundColor Yellow 
           $readhost = Read-Host " ( y / n ) " 
           Switch ($ReadHost) 
