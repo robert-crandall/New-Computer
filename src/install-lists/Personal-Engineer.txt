@@ -6,4 +6,4 @@
 	cinst rsat -y
 	cinst p4v -y
 	cinst sysinternals -y
-	cinst microsoftteams -y
+	cinst microsoft-teams -y
