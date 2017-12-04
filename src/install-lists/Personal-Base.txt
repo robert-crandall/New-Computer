@@ -24,6 +24,7 @@
 	cinst mediatab -y # Media info in properties
 	cinst mpc-hc -y
 	cinst firefox -y
+	cinst reddit-wallpaper-changer -y
 
 # Runtimes
 	cinst javaruntime -y
