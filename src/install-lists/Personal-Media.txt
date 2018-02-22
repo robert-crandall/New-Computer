@@ -4,14 +4,12 @@
 
 # Digital entertainment
 	cinst calibre -y
-	cinst handbrake.install -y
+	# cinst handbrake.install -y ## Broken package
 	cinst mediainfo-cli -y
-	cinst QuickPar -y
+	cinst QuickPar -y --allow-empty-checksums
 	cinst mkvtoolnix -y
 	cinst youtube-dl -y
 
-# Development
-	cinst php -y
 	
 # Utilities
 
