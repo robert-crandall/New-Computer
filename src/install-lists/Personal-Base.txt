@@ -10,7 +10,7 @@
 	cinst visualstudiocode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
-	cinst hashtab -y
+	cinst hashtab -y --ignore-checksums
 	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
 	cinst windirstat -y
@@ -18,7 +18,7 @@
 	cinst putty.install -y
 	cinst lastpass -y --ignore-checksums
 	cinst dropbox -y
-	cinst abc-update -y # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
+	cinst abc-update -y --ignore-checksums # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
 	cinst greenshot -y
 	cinst rdcman -y
 	cinst mediatab -y # Media info in properties
@@ -34,6 +34,7 @@
 ## Personalization
 
 	# These might not work until shell is closed and reopened
+	refreshenv
 	code --install-extension robertohuertasm.vscode-icons # Go to File > Preferences > File Icon Theme > VSCode Icons.
 	code --install-extension ms-vscode.PowerShell
 	code --install-extension hnw.vscode-auto-open-markdown-preview
