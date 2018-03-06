@@ -11,14 +11,9 @@
 	cinst youtube-dl -y
 
 	
-# Utilities
-
-	# Apply tweaks - PATH variables
-	if(!(Test-Path -Path "C:\tools\" )){
-		New-Item -ItemType directory -Path "c:\tools\"
-	}
-	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Personal-Media-Tweaks.ps1' -OutFile 'C:\tools\Personal-Media-Tweaks.ps1'
-		# Remove illegal dashes
-			(Get-Content C:\tools\Personal-Media-Tweaks.ps1 -Encoding UTF8).replace('[\u2012\u2013\u2014]', '-') | Set-Content C:\tools\Personal-Media-Tweaks.ps1
-
-	&  'C:\tools\Personal-Media-Tweaks.ps1'
+## Add Handbrake to system path
+$AddedLocation ="C:\Program Files\Handbrake"
+$Reg = "Registry::HKLM\System\CurrentControlSet\Control\Session Manager\Environment"
+$OldPath = (Get-ItemProperty -Path "$Reg" -Name PATH).Path
+$NewPath= $OldPath + ';' + $AddedLocation
+Set-ItemProperty -Path "$Reg" -Name PATH –Value $NewPath

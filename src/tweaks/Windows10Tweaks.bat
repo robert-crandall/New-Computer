@@ -6,18 +6,6 @@ reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTas
 REM *** Disable MRU lists (jump lists) of XAML apps in Start Menu ***
 ::reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackDocs" /t REG_DWORD /d 0 /f
 
-REM *** Set Windows Explorer to start on This PC instead of Quick Access ***
-REM 1 = This PC, 2 = Quick access
-reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "LaunchTo" /t REG_DWORD /d 1 /f
-
-REM *** Disable Frequent folders in Quick Access ***
-reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /v "ShowFrequent" /t REG_DWORD /d 0 /f
-
-
-REM *** Remove Homegroup ***
-sc config "HomeGroupProvider" start= disabled
-sc stop "HomeGroupProvider"
-
 REM *** Stop RDC Cert complaints ***
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client" /v "AuthenticationLevelOverride" /t REG_DWORD /d 0 /f
 

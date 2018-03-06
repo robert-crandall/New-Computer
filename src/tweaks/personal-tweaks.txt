@@ -1,5 +1,6 @@
-# Directions - run this command in the directory with Win10.ps1 and Cooper.txt
-# powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -preset Cooper.txt
+# Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
+# From cmd (admin): powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -preset personal-tweaks.txt
+# From powershell (admin): . ./Win10-Initial-Setup-Script.ps1 -preset personal-tweaks.ps1
 
 ### Require administrator privileges ###
 RequireAdmin
