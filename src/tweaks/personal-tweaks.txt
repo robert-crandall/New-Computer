@@ -1,0 +1,82 @@
+# Directions - run this command in the directory with Win10.ps1 and Cooper.txt
+# powershell.exe -NoProfile -ExecutionPolicy Bypass -File Win10.ps1 -preset Cooper.txt
+
+### Require administrator privileges ###
+RequireAdmin
+
+### Privacy Settings ###
+DisableTelemetry
+DisableWiFiSense
+DisableWebSearch
+DisableAppSuggestions
+DisableBackgroundApps
+DisableLocationTracking
+DisableMapUpdates
+DisableFeedback
+DisableAdvertisingID
+DisableCortana
+DisableErrorReporting
+DisableAutoLogger
+DisableDiagTrack
+DisableWAPPush
+
+### Service Tweaks ###
+SetCurrentNetworkPrivate
+DisableHomeGroups
+DisableSharedExperiences
+DisableRemoteAssistance
+EnableRemoteDesktop
+DisableAutoplay
+DisableAutorun
+DisableHibernation
+
+
+### UI Tweaks ###
+DisableActionCenter
+DisableStickyKeys
+ShowTaskManagerDetails
+ShowFileOperationsDetails
+DisableFileDeleteConfirm
+HideTaskbarSearchBox
+HideTaskbarPeopleIcon
+ShowTrayIcons
+ShowKnownExtensions
+ShowHiddenFiles
+HideSyncNotifications
+HideRecentShortcuts
+SetExplorerThisPC
+HideDesktopFromThisPC
+HideDocumentsFromThisPC
+HideDownloadsFromThisPC
+HideMusicFromThisPC
+HidePicturesFromThisPC
+HideVideosFromThisPC
+Hide3DObjectsFromThisPC
+HideDocumentsFromExplorer
+HideMusicFromExplorer
+HidePicturesFromExplorer
+HideVideosFromExplorer
+Hide3DObjectsFromExplorer
+SetControlPanelViewIcons
+EnableNumlock
+
+### Application Tweaks ###
+DisableOneDrive
+UninstallOneDrive
+UninstallMsftBloat
+UninstallThirdPartyBloat
+DisableXboxFeatures
+DisableAdobeFlash
+UninstallMediaPlayer
+UninstallWorkFolders
+SetPhotoViewerAssociation
+AddPhotoViewerOpenWith
+DisableSearchAppInStore 
+DisableNewAppPrompt
+
+### Unpinning ###
+UnpinStartMenuTiles
+UnpinTaskbarIcons
+
+### Auxiliary Functions ###
+WaitForKey
