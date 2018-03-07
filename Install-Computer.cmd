@@ -47,6 +47,7 @@ goto:eof
          Write-host "Getting personal lists"; 
          $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/initialize.txt"
          $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Base.txt"
+         $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
          } 
       Default {Write-Host "No, stopping other prompts"} 
      } 
