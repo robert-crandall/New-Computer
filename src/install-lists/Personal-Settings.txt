@@ -34,7 +34,7 @@
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
 
 	"C:\tools\Win10-Initial-Setup-Script.ps1"
-	. "C:\tools\Win10-Initial-Setup-Script.ps1" -preset personal-tweaks.txt
+	. "C:\tools\Win10-Initial-Setup-Script.ps1" -preset "c:\tools\personal-tweaks.txt"
 
 
 	# Create symbolic links
