@@ -18,18 +18,10 @@
 	# Apply personalization tweaks
 	
 	Write-host "Step 1 - Win10Tweaks "
-	Get-Date
-	if(!(Test-Path -Path "C:\tools\" )){
-		New-Item -ItemType directory -Path "c:\tools\"
-	}
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Windows10Tweaks.bat' -OutFile 'C:\tools\Win10tweaks.bat'
 	start-process C:\tools\Win10tweaks.bat -Wait
 
 	Write-host "Step 2 - More Win10Tweaks"
-	Get-Date
-	if(!(Test-Path -Path "C:\tools\" )){
-		New-Item -ItemType directory -Path "c:\tools\"
-	}
 	Invoke-WebRequest 'https://raw.githubusercontent.com/Disassembler0/Win10-Initial-Setup-Script/master/Win10.ps1' -OutFile 'C:\tools\Win10-Initial-Setup-Script.ps1'
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
 
