@@ -4,6 +4,6 @@
 	cinst sql2008r2.cmdline -y
 	cinst vmwarevsphereclient -version 5.5.0 -y
 	cinst rsat -y
-	cinst p4v -y
+	cinst p4v -y --ignore-checksums
 	cinst sysinternals -y
 	cinst microsoft-teams -y
