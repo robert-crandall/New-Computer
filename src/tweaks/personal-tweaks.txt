@@ -62,8 +62,6 @@ SetControlPanelViewIcons
 EnableNumlock
 
 ### Application Tweaks ###
-DisableOneDrive
-UninstallOneDrive
 UninstallMsftBloat
 UninstallThirdPartyBloat
 DisableXboxFeatures
