@@ -40,7 +40,6 @@ ShowFileOperationsDetails
 DisableFileDeleteConfirm
 HideTaskbarSearchBox
 HideTaskbarPeopleIcon
-ShowTrayIcons
 ShowKnownExtensions
 ShowHiddenFiles
 HideSyncNotifications
