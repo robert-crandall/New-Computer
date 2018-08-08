@@ -2,4 +2,4 @@
 # Utilities
 	cinst rsat -y
 	cinst microsoft-teams -y
-	cinst telnet -y
+	cinst slack -y
