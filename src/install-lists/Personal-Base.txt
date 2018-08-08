@@ -8,19 +8,14 @@
 	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
-	cinst paint.net -y --allow-empty-checksums
 	cinst cmder -y
-	cinst windirstat -y
 	cinst winscp -y
-	cinst putty.install -y
 	cinst lastpass -y --ignore-checksums
 	cinst dropbox -y
 	cinst abc-update -y --ignore-checksums # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
 	cinst greenshot -y
 	cinst rdcman -y
-	cinst mediatab -y # Media info in properties
 	cinst mpc-hc -y
-	cinst firefox -y
 	cinst reddit-wallpaper-changer -y
 
 # Runtimes
