@@ -10,9 +10,7 @@
 	cinst hashtab -y --ignore-checksums
 	cinst cmder -y
 	cinst winscp -y
-	cinst lastpass -y --ignore-checksums
 	cinst dropbox -y
-	cinst abc-update -y --ignore-checksums # ABC-Update.exe /S:MSUpdate /A:Install /R:3 /T:Driver,Software
 	cinst greenshot -y
 	cinst rdcman -y
 	cinst mpc-hc -y
