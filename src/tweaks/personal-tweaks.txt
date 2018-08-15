@@ -29,8 +29,6 @@ DisableRemoteAssistance
 EnableRemoteDesktop
 DisableAutoplay
 DisableAutorun
-DisableHibernation
-
 
 ### UI Tweaks ###
 DisableActionCenter
@@ -66,17 +64,12 @@ UninstallOneDrive
 UninstallMsftBloat
 UninstallThirdPartyBloat
 DisableXboxFeatures
-DisableAdobeFlash
-UninstallMediaPlayer
 UninstallWorkFolders
 SetPhotoViewerAssociation
 AddPhotoViewerOpenWith
 DisableSearchAppInStore 
 DisableNewAppPrompt
 
-### Unpinning ###
-UnpinStartMenuTiles
-UnpinTaskbarIcons
 
 ### Auxiliary Functions ###
 WaitForKey
