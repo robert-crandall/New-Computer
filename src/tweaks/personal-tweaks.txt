@@ -10,7 +10,6 @@ DisableTelemetry
 DisableWiFiSense
 DisableWebSearch
 DisableAppSuggestions
-DisableBackgroundApps
 DisableLocationTracking
 DisableMapUpdates
 DisableFeedback
