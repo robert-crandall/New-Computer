@@ -91,13 +91,13 @@ goto:eof
           Switch ($ReadHost) 
           { 
             Y {
-              Write-host "Getting media lists"; 
+              Write-host "Getting gaming lists"; 
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Gaming.txt"
               } 
             Default {Write-Host "Skipping gaming lists"} 
           } 
 
-          Write-host "Getting finalize list too"; 
+          Write-host "Finally, getting finalize list"; 
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/finalize.txt"
               
           $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
