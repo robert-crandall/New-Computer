@@ -23,6 +23,7 @@
 
 	Write-host "Step 2 - More Win10Tweaks"
 	Invoke-WebRequest 'https://raw.githubusercontent.com/Disassembler0/Win10-Initial-Setup-Script/master/Win10.ps1' -OutFile 'C:\tools\Win10-Initial-Setup-Script.ps1'
+	Invoke-WebRequest 'https://raw.githubusercontent.com/Disassembler0/Win10-Initial-Setup-Script/master/Win10.psm1' -OutFile 'C:\tools\Win10-Initial-Setup-Script.psm1'
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
 
 	"C:\tools\Win10-Initial-Setup-Script.ps1"
