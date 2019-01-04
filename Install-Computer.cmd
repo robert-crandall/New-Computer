@@ -23,6 +23,7 @@ goto:eof
   Rename-Computer -NewName $computerName
 
  $BoxstarterFile = "C:\tools\Chocolatey-install.ps1"
+ $secondRunFile = "C:\tools\personalization.ps1"
 
 
   # Create tools directory if Boxstarter didn't already
@@ -35,6 +36,8 @@ goto:eof
   # List of sources for this machine
   $sources = @("https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Basic-Computer.txt"
   )
+  
+  $secondrun = @()
 
   $continue=$false
 
@@ -99,9 +102,10 @@ goto:eof
 
           Write-host "Finally, getting finalize list"; 
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/finalize.txt"
+			  
               
           $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
-
+		  $secondrun += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
 
@@ -110,6 +114,11 @@ goto:eof
   foreach ($source in $sources)
   {
     add-content $BoxstarterFile -value ((new-object net.webclient).DownloadString($source))
+  }
+  
+  foreach ($source in $secondrun)
+  {
+    add-content $secondRunFile -value ((new-object net.webclient).DownloadString($source))
   }
 
  
