@@ -114,7 +114,7 @@ goto:eof
 
  
   # Run the install
-  & "$BoxstarterFile"
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$BoxstarterFile"
 
 ## List of manual installs
 # Dism /online /enable-feature /featurename:NetFx3 /All /Source:E:\sources\sxs /LimitAccess
