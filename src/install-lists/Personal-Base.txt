@@ -15,6 +15,7 @@
 	cinst rdcman -y
 	cinst mpc-hc -y
 	cinst reddit-wallpaper-changer -y
+	cinst abc-update -y
 
 # Runtimes
 	cinst javaruntime -y
