@@ -3,10 +3,20 @@
 * Run Install-Computer.cmd as an Administrator
 * Follow the prompts
 
+## Post Installation Steps
+
+* Verify personalizations done (Cortana search and Onedrive missing)
+  * If not, run the second-run file
+  * Execution Policy might need to be adjusted
+* Sign into apps
+  * Chrome
+  * Lastpass
+  * Dropbox
+
 ## Gotchas
 ### Slow Start Menu
 ```
-Manual fix for now.
+This seems to be fixed in 1809 build
 Start -> Settings -> Personalization -> Start
 Disable
 - Show more tiles
@@ -22,10 +32,3 @@ Intel INF installation
 Intel® Rapid Storage Technology
 Nvidia driver
 ```
-
-### Themes
-Windows Store is hard to search for themes.
-* Check here: http://themepack.me/category/nature/
-* http://themepack.me/theme/yosemite/
-* http://themepack.me/theme/forest/
-* http://themepack.me/theme/bing/
