@@ -1,6 +1,6 @@
 ## Add Update-Computer to Desktop
-	#$DesktopPath = [Environment]::GetFolderPath("Desktop")
-	#Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/Update-Computer.bat' -OutFile (Join-Path $DesktopPath "Update-Computer.bat")
+	$DesktopPath = [Environment]::GetFolderPath("Desktop")
+	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/Update-Computer.bat' -OutFile (Join-Path $DesktopPath "Update-Computer.bat")
 
 
 ## Reduce Windows SXS size
