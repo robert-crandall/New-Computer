@@ -4,7 +4,7 @@
     disable-computerrestore -drive "C:\"
 
 # Utilities
-	cinst visualstudiocode -y
+	cinst vscode -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
