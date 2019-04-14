@@ -5,6 +5,14 @@
 
 # Utilities
 	cinst vscode -y
+	cinst vscode-powershell -y
+	cinst vscode-csharp -y
+	cinst vscode-icons -y
+	cinst vscode-docker -y
+	cinst vscode-gitlens -y
+	cinst vscode-gitignore -y
+	cinst vscode-markdownlint -y
+	cinst visualstudiocode-disableautoupdate -y
 	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
