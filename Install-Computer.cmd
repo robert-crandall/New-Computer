@@ -108,7 +108,15 @@ goto:eof
 		  $secondrun += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
-
+  Write-host "Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 
+          $readhost = Read-Host " ( y / n ) " 
+          Switch ($ReadHost) 
+          { 
+            Y {
+              Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+	       } 
+            Default {Write-Host "Skipping WSL"} 
+          } 
 
   # Generate boxstarter file
   foreach ($source in $sources)
