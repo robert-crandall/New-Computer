@@ -99,6 +99,17 @@ goto:eof
               } 
             Default {Write-Host "Skipping gaming lists"} 
           } 
+	  
+	  Write-host "Install Docker? (Default is no)" -ForegroundColor Yellow 
+          $readhost = Read-Host " ( y / n ) " 
+          Switch ($ReadHost) 
+          { 
+            Y {
+              Write-host "Getting Docker lists"; 
+              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Docker.txt"
+              } 
+            Default {Write-Host "Skipping Docker installation"} 
+          } 
 
           Write-host "Finally, getting finalize list"; 
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/finalize.txt"
@@ -108,7 +119,7 @@ goto:eof
 		  $secondrun += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
-  Write-host "Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 
+  Write-host "Last Question: Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 
           $readhost = Read-Host " ( y / n ) " 
           Switch ($ReadHost) 
           { 
