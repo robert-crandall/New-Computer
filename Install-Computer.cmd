@@ -67,13 +67,13 @@ goto:eof
             Default {Write-Host "Skipping media lists"} 
           } 
 
-        Write-host "Is this a computer for engineering? (Default is no)" -ForegroundColor Yellow 
+        Write-host "Is this a computer for an Office? (Default is no)" -ForegroundColor Yellow 
           $readhost = Read-Host " ( y / n ) " 
           Switch ($ReadHost) 
           { 
             Y {
               Write-host "Getting engineering lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Engineer.txt"
+              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Office.txt"
               } 
             Default {Write-Host "Skipping engineering lists"} 
           } 
@@ -113,7 +113,7 @@ goto:eof
           Switch ($ReadHost) 
           { 
             Y {
-              Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+              Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
 	       } 
             Default {Write-Host "Skipping WSL"} 
           } 
