@@ -1,0 +1,2 @@
+## Install docker. Making it's own file because there might be other dependencies to add.
+  cinst docker-desktop -y
