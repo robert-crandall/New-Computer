@@ -18,7 +18,6 @@
 	cinst hashtab -y --ignore-checksums
 	cinst cmder -y
 	cinst winscp -y
-	cinst dropbox -y
 	cinst greenshot -y
 	cinst rdcman -y
 	cinst mpc-hc -y
