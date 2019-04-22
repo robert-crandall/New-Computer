@@ -99,7 +99,7 @@ HideRecentlyAddedApps         # ShowRecentlyAddedApps
 # SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
 SetVisualFXPerformance          # SetVisualFXAppearance
-EnableDarkTheme               # DisableDarkTheme
+# EnableDarkTheme               # DisableDarkTheme
 # AddENKeyboard                 # RemoveENKeyboard
 EnableNumlock                 # DisableNumlock
 # SetSoundSchemeNone            # SetSoundSchemeDefault
