@@ -25,3 +25,6 @@
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
 
 	powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\tools\Win10-Initial-Setup-Script.ps1" -include "C:\tools\Win10-Initial-Setup-Script.psm1" -preset "c:\tools\personal-tweaks.txt"
+
+## Reinstall Mail and Calendar
+	Get-AppxPackage -AllUsers "Microsoft.windowscommunicationsapps" | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
