@@ -110,6 +110,17 @@ goto:eof
               } 
             Default {Write-Host "Skipping Docker installation"} 
           } 
+	  
+	  Write-host "Last Question: Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 
+          $readhost = Read-Host " ( y / n ) " 
+          Switch ($ReadHost) 
+          { 
+            Y {
+	      Write-host "Getting WSL lists"; 
+              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-WSL.txt"
+	       } 
+            Default {Write-Host "Skipping WSL"} 
+          } 
 
           Write-host "Finally, getting finalize list"; 
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/finalize.txt"
@@ -119,15 +130,6 @@ goto:eof
 		  $secondrun += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
-  Write-host "Last Question: Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 
-          $readhost = Read-Host " ( y / n ) " 
-          Switch ($ReadHost) 
-          { 
-            Y {
-              Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
-	       } 
-            Default {Write-Host "Skipping WSL"} 
-          } 
 
   # Generate boxstarter file
   foreach ($source in $sources)
