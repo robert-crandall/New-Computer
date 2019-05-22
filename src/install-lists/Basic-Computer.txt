@@ -4,7 +4,7 @@
   cinst dotnet4.5 -y
 
 #Core utilities
-  cinst googlechrome -y
+  cinst googlechrome -y --ignore-checksums
   cinst 7zip.install -y
   cinst notepadplusplus -y
   
