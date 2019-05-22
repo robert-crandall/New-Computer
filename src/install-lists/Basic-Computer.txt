@@ -1,6 +1,6 @@
 ## No matter what computer, these are useful tools to have
 # Install DotNet
-  cinst DotNet3.5 -y
+  DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /NoRestart
   cinst dotnet4.5 -y
 
 #Core utilities
