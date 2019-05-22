@@ -13,7 +13,6 @@
 	cinst vscode-gitignore -y
 	cinst vscode-markdownlint -y
 	cinst visualstudiocode-disableautoupdate -y
-	cinst notepadplusplus -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
 	cinst cmder -y
