@@ -146,6 +146,10 @@ goto:eof
   # Run the install
   powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$BoxstarterFile"
 
+  # Output any errors
+  $DesktopPath = [Environment]::GetFolderPath("Desktop")
+  Select-String -Path C:\ProgramData\chocolatey\logs\choco.summary.log -pattern "\[ERROR\]" -AllMatches | Foreach {$_.Line} > $DesktopPath\chocolatey_errors.log
+
 ## List of manual installs
 # Dism /online /enable-feature /featurename:NetFx3 /All /Source:E:\sources\sxs /LimitAccess
 # Intel Management Engine Interface
