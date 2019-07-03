@@ -19,7 +19,7 @@ DisableFeedback                 # EnableFeedback
 DisableTailoredExperiences      # EnableTailoredExperiences
 DisableAdvertisingID            # EnableAdvertisingID
 DisableWebLangList              # EnableWebLangList
-DisableCortana                  # EnableCortana
+# DisableCortana                  # EnableCortana
 DisableErrorReporting           # EnableErrorReporting
 # SetP2PUpdateLocal             # SetP2PUpdateInternet          # SetP2PUpdateDisable
 DisableDiagTrack                # EnableDiagTrack
@@ -98,7 +98,7 @@ DisableNewAppPrompt             # EnableNewAppPrompt
 HideRecentlyAddedApps         # ShowRecentlyAddedApps
 # SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
-SetVisualFXPerformance          # SetVisualFXAppearance
+# SetVisualFXPerformance          # SetVisualFXAppearance
 # EnableDarkTheme               # DisableDarkTheme
 # AddENKeyboard                 # RemoveENKeyboard
 EnableNumlock                 # DisableNumlock
@@ -118,7 +118,7 @@ HideSyncNotifications           # ShowSyncNotifications
 HideRecentShortcuts             # ShowRecentShortcuts
 SetExplorerThisPC               # SetExplorerQuickAccess
 # HideQuickAccess                 # ShowQuickAccess
-ShowThisPCOnDesktop             # HideThisPCFromDesktop
+# ShowThisPCOnDesktop             # HideThisPCFromDesktop
 # ShowUserFolderOnDesktop       # HideUserFolderFromDesktop
 HideDesktopFromThisPC           # ShowDesktopInThisPC
 # HideDesktopFromExplorer       # ShowDesktopInExplorer
