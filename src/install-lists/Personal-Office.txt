@@ -4,3 +4,4 @@
 	cinst microsoft-teams -y
 	cinst slack -y
 	cinst office365proplus -y
+	cinst rdcman -y
