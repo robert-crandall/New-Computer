@@ -15,12 +15,8 @@
 	cinst visualstudiocode-disableautoupdate -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
-	cinst cmder -y
 	cinst winscp -y
-	cinst greenshot -y
-	cinst rdcman -y
 	cinst mpc-hc -y
-	cinst reddit-wallpaper-changer -y
 	cinst abc-update -y --ignore-checksums
 
 # Runtimes
