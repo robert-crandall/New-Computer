@@ -16,6 +16,7 @@
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
 	cinst winscp -y
+	cinst mediatab -y # Media info in properties
 	cinst mpc-hc -y
 	cinst abc-update -y --ignore-checksums
 
