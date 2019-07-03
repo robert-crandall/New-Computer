@@ -6,7 +6,6 @@
 	cinst calibre -y
 	# cinst handbrake.install -y ## Broken package
 	cinst mediainfo-cli -y
-	cinst mediatab -y # Media info in properties
 	cinst QuickPar -y --allow-empty-checksums
 	cinst mkvtoolnix -y
 	cinst youtube-dl -y
