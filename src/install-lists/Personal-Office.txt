@@ -5,3 +5,4 @@
 	cinst slack -y
 	cinst office365proplus -y
 	cinst rdcman -y
+	cinst fiddler -y
