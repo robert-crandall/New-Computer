@@ -11,7 +11,7 @@
 	cinst vscode-gitlens -y
 	cinst vscode-gitignore -y
 	cinst vscode-markdownlint -y
-	cinst visualstudiocode-disableautoupdate -y
+	# cinst visualstudiocode-disableautoupdate -y
 	cinst winmerge -y
 	cinst hashtab -y --ignore-checksums
 	cinst winscp -y
