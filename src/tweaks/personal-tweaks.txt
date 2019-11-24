@@ -6,24 +6,24 @@
 RequireAdmin
 
 ### Privacy Tweaks ###
-DisableTelemetry                # EnableTelemetry
-DisableWiFiSense                # EnableWiFiSense
+# DisableTelemetry                # EnableTelemetry
+# DisableWiFiSense                # EnableWiFiSense
 # DisableSmartScreen            # EnableSmartScreen
 DisableWebSearch                # EnableWebSearch
 DisableAppSuggestions           # EnableAppSuggestions
-DisableActivityHistory          # EnableActivityHistory
-DisableBackgroundApps           # EnableBackgroundApps
-DisableLocationTracking         # EnableLocationTracking
-DisableMapUpdates               # EnableMapUpdates
-DisableFeedback                 # EnableFeedback
-DisableTailoredExperiences      # EnableTailoredExperiences
+# DisableActivityHistory          # EnableActivityHistory
+# DisableBackgroundApps           # EnableBackgroundApps
+# DisableLocationTracking         # EnableLocationTracking
+# DisableMapUpdates               # EnableMapUpdates
+# DisableFeedback                 # EnableFeedback
+# DisableTailoredExperiences      # EnableTailoredExperiences
 DisableAdvertisingID            # EnableAdvertisingID
-DisableWebLangList              # EnableWebLangList
+# DisableWebLangList              # EnableWebLangList
 # DisableCortana                  # EnableCortana
-DisableErrorReporting           # EnableErrorReporting
+# DisableErrorReporting           # EnableErrorReporting
 # SetP2PUpdateLocal             # SetP2PUpdateInternet          # SetP2PUpdateDisable
-DisableDiagTrack                # EnableDiagTrack
-DisableWAPPush                  # EnableWAPPush
+# DisableDiagTrack                # EnableDiagTrack
+# DisableWAPPush                  # EnableWAPPush
 # HideRecentJumplists           # ShowRecentJumplists
 ### Security Tweaks ###
 # SetUACLow                     # SetUACHigh
@@ -51,7 +51,7 @@ HideDefenderTrayIcon          # ShowDefenderTrayIcon
 # EnableF8BootMenu                # DisableF8BootMenu
 # DisableBootRecovery           # EnableBootRecovery
 # DisableRecoveryAndReset       # EnableRecoveryAndReset
-SetDEPOptOut                    # SetDEPOptIn
+# SetDEPOptOut                    # SetDEPOptIn
 
 ### Service Tweaks ###
 # DisableUpdateMSRT             # EnableUpdateMSRT
@@ -63,7 +63,7 @@ DisableRemoteAssistance         # EnableRemoteAssistance
 EnableRemoteDesktop             # DisableRemoteDesktop
 DisableAutoplay                 # EnableAutoplay
 DisableAutorun                  # EnableAutorun
-DisableRestorePoints          # EnableRestorePoints
+# DisableRestorePoints          # EnableRestorePoints
 # EnableStorageSense            # DisableStorageSense
 # DisableDefragmentation        # EnableDefragmentation
 # DisableSuperfetch             # EnableSuperfetch
@@ -77,7 +77,7 @@ SetBIOSTimeUTC                # SetBIOSTimeLocal
 # DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
 
 ### UI Tweaks ###
-DisableActionCenter             # EnableActionCenter
+# DisableActionCenter             # EnableActionCenter
 # DisableLockScreen               # EnableLockScreen
 # DisableLockScreenRS1          # EnableLockScreenRS1
 # HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
@@ -112,7 +112,7 @@ ShowKnownExtensions             # HideKnownExtensions
 EnableNavPaneExpand             # DisableNavPaneExpand
 # EnableFldrSeparateProcess     # DisableFldrSeparateProcess
 # EnableRestoreFldrWindows      # DisableRestoreFldrWindows
-# DisableSharingWizard          # EnableSharingWizard
+DisableSharingWizard          # EnableSharingWizard
 # HideSelectCheckboxes          # ShowSelectCheckboxes
 HideSyncNotifications           # ShowSyncNotifications
 HideRecentShortcuts             # ShowRecentShortcuts
@@ -148,7 +148,7 @@ UninstallMsftBloat              # InstallMsftBloat
 UninstallThirdPartyBloat        # InstallThirdPartyBloat
 # UninstallWindowsStore         # InstallWindowsStore
 DisableXboxFeatures             # EnableXboxFeatures
-DisableAdobeFlash               # EnableAdobeFlash
+# DisableAdobeFlash               # EnableAdobeFlash
 DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
 UninstallMediaPlayer          # InstallMediaPlayer
 # UninstallInternetExplorer     # InstallInternetExplorer
@@ -177,4 +177,4 @@ UnpinStartMenuTiles
 # UnpinTaskbarIcons
 
 ### Auxiliary Functions ###
-WaitForKey
+# WaitForKey
