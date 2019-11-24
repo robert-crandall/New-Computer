@@ -24,3 +24,6 @@
 	cinst vcredist2010 -y
 	cinst vcredist2015 -y
 
+# Browsers
+	cinst microsoft-edge-insider -y
+	
