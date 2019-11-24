@@ -25,6 +25,7 @@ DisableAdvertisingID            # EnableAdvertisingID
 # DisableDiagTrack                # EnableDiagTrack
 # DisableWAPPush                  # EnableWAPPush
 # HideRecentJumplists           # ShowRecentJumplists
+
 ### Security Tweaks ###
 # SetUACLow                     # SetUACHigh
 # EnableSharingMappedDrives     # DisableSharingMappedDrives
@@ -86,7 +87,7 @@ SetBIOSTimeUTC                # SetBIOSTimeLocal
 DisableStickyKeys               # EnableStickyKeys
 ShowTaskManagerDetails          # HideTaskManagerDetails
 ShowFileOperationsDetails       # HideFileOperationsDetails
-# EnableFileDeleteConfirm       # DisableFileDeleteConfirm
+DisableFileDeleteConfirm        # EnableFileDeleteConfirm
 HideTaskbarSearch               # ShowTaskbarSearchIcon         # ShowTaskbarSearchBox
 HideTaskView                    # ShowTaskView
 ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
@@ -102,7 +103,7 @@ DisableShortcutInName           # EnableShortcutInName
 # EnableDarkTheme               # DisableDarkTheme
 # AddENKeyboard                 # RemoveENKeyboard
 EnableNumlock                 # DisableNumlock
-# SetSoundSchemeNone            # SetSoundSchemeDefault
+SetSoundSchemeNone            # SetSoundSchemeDefault
 # DisableStartupSound           # EnableStartupSound
 # DisableChangingSoundScheme    # EnableChangingSoundScheme
 
@@ -110,8 +111,8 @@ EnableNumlock                 # DisableNumlock
 ShowKnownExtensions             # HideKnownExtensions
 # ShowHiddenFiles                 # HideHiddenFiles
 EnableNavPaneExpand             # DisableNavPaneExpand
-# EnableFldrSeparateProcess     # DisableFldrSeparateProcess
-# EnableRestoreFldrWindows      # DisableRestoreFldrWindows
+EnableFldrSeparateProcess     # DisableFldrSeparateProcess
+DisableRestoreFldrWindows       # EnableRestoreFldrWindows
 DisableSharingWizard          # EnableSharingWizard
 # HideSelectCheckboxes          # ShowSelectCheckboxes
 HideSyncNotifications           # ShowSyncNotifications

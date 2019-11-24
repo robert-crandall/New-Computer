@@ -1,3 +1,5 @@
+## finalize.txt
+
 ## Add Update-Computer to Desktop
 	$DesktopPath = [Environment]::GetFolderPath("Desktop")
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/Update-Computer.bat' -OutFile (Join-Path $DesktopPath "Update-Computer.bat")
@@ -8,5 +10,4 @@
 		New-Item -ItemType directory -Path "c:\tools\"
 	}
 	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Windows-DeflatSxS.bat' -OutFile 'C:\tools\Windows-DeflatSxS.bat'
-	#start-process C:\tools\Windows-DeflatSxS.bat
 

@@ -1,12 +1,13 @@
+## Personal-Media.txt
 
 # File Renamer
 	cinst ant-renamer -y --ignore-checksum
 
 # Digital entertainment
 	cinst calibre -y
-	# cinst handbrake.install -y ## Broken package
+	cinst handbrake -y ## Broken package
+	cinst ffmpeg -y
 	cinst mediainfo-cli -y
-	cinst QuickPar -y --allow-empty-checksums
 	cinst mkvtoolnix -y
 	cinst youtube-dl -y
 

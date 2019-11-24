@@ -48,7 +48,6 @@ goto:eof
        Y {
          $continue=$true
          Write-host "Getting personal lists"; 
-         ## $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/initialize.txt"
          $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Base.txt"
          } 
       Default {Write-Host "No, stopping other prompts"} 
@@ -98,17 +97,6 @@ goto:eof
               $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Gaming.txt"
               } 
             Default {Write-Host "Skipping gaming lists"} 
-          } 
-	  
-	  Write-host "Install Docker? (Default is no)" -ForegroundColor Yellow 
-          $readhost = Read-Host " ( y / n ) " 
-          Switch ($ReadHost) 
-          { 
-            Y {
-              Write-host "Getting Docker lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Docker.txt"
-              } 
-            Default {Write-Host "Skipping Docker installation"} 
           } 
 	  
 	  Write-host "Last Question: Install Windows Subsystem Linux? (Default is no)" -ForegroundColor Yellow 

@@ -1,10 +1,9 @@
+## Personal-Settings.txt
+
 ## Personalization
 
 	# These might not work until shell is closed and reopened
 	refreshenv
-	
-	# Personalize VS Code
-	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/vscode-installs.ps1' -OutFile 'C:\tools\vscode-installs.ps1'
 	
 	# Create symbolic links
 	  Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/Create-Symlinks.bat' -OutFile 'C:\tools\Create-Symlinks.bat'

@@ -1,7 +1,6 @@
-## These are files I use regardless of what computer I'm on, but they aren't for computers I support 
+## Personal-Base.txt
 
-# Disable System Restore
-    disable-computerrestore -drive "C:\"
+## These are files I use regardless of what computer I'm on, but they aren't for computers I support 
 
 # Utilities
 	cinst vscode -y
