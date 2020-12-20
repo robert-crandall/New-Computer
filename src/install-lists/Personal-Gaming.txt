@@ -1,4 +1,6 @@
 ## Personal-Gaming.txt
 
 # Game stuff
-	cinst steam -y
+	winget install Microsoft.DirectX
+	winget install Valve.Steam
+	winget install EpicGames.EpicGamesLauncher 

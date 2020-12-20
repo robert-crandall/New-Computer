@@ -7,7 +7,6 @@ setlocal
 : Change current directory to script location - useful for including .ps1 files
 cd %~dp0
 : Invoke this file as powershell expression
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 powershell -executionpolicy bypass -Command "Invoke-Expression $([System.IO.File]::ReadAllText('%~f0'))"
 : Restore environment variables present before setlocal and restore current directory
 endlocal
@@ -22,9 +21,7 @@ goto:eof
   $computerName = Read-Host -Prompt 'Input your computer name'
   Rename-Computer -NewName $computerName
 
- $BoxstarterFile = "C:\tools\Chocolatey-install.ps1"
- $secondRunFile = "C:\tools\personalization.ps1"
-
+ $BoxstarterFile = "C:\tools\new-install.ps1"
 
   # Create tools directory if Boxstarter didn't already
   if((Test-Path -Path $BoxstarterFile )){
@@ -37,8 +34,6 @@ goto:eof
   $sources = @("https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Basic-Computer.txt"
   )
   
-  $secondrun = @()
-
   $continue=$false
 
   Write-host "Is this a computer for you? No means for someone else (Default is No)" -ForegroundColor Yellow 
@@ -115,7 +110,6 @@ goto:eof
 			  
               
           $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
-		  $secondrun += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
 
@@ -125,14 +119,8 @@ goto:eof
     add-content $BoxstarterFile -value ((new-object net.webclient).DownloadString($source))
   }
   
-  foreach ($source in $secondrun)
-  {
-    add-content $secondRunFile -value ((new-object net.webclient).DownloadString($source))
-  }
-
- 
   # Run the install
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$BoxstarterFile"
+  #powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$BoxstarterFile"
 
   # Output any errors
   $DesktopPath = [Environment]::GetFolderPath("Desktop")

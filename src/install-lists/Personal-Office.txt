@@ -1,9 +1,8 @@
 ## Personal-Office.txt
 
 # Utilities
-	cinst rsat -y
-	cinst microsoft-teams -y
-	cinst slack -y
-	cinst office365proplus -y
-	cinst rdcman -y
-	cinst fiddler -y
+	# cinst rsat -y
+	winget install SlackTechnologies.Slack
+	winget install Microsoft.Teams 
+	# cinst office365proplus -y
+	# cinst fiddler -y

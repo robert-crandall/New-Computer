@@ -1,15 +1,16 @@
 ## Personal-Media.txt
 
 # File Renamer
-	cinst ant-renamer -y --ignore-checksum
+	# winget install LancelotSoftware.MediaFileManager  ## Trying powertoys instead
 
 # Digital entertainment
-	cinst calibre -y
-	cinst handbrake -y ## Broken package
-	cinst ffmpeg -y
-	cinst mediainfo-cli -y
-	cinst mkvtoolnix -y
-	cinst youtube-dl -y
+	# winget install calibre.calibre  # Don't need this on most machines
+	winget install thehandbraketeam.handbrake 
+	# cinst ffmpeg -y
+	winget install MKVToolNix.MKVToolNix 
+	# cinst youtube-dl -y
+	winget install MediaArea.MediaInfo 
+	winget install MediaArea.MediaInfo-GUI 
 
 	
 ## Add Handbrake to system path

@@ -3,14 +3,11 @@
 ## No matter what computer, these are useful tools to have
 # Install DotNet
   DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /NoRestart
-  cinst dotnet4.5 -y
+  winget install Microsoft.dotnet
+  winget install Microsoft.dotnetRuntime 
+  winget install Microsoft.dotNetFramework 
 
 #Core utilities
-  cinst googlechrome -y --ignore-checksums
-  cinst 7zip.install -y
-  cinst notepadplusplus -y
-  
-# Upgrade Chocolatey
-  cinst chocolatey -y
-  choco upgrade chocolatey -y
-        
+  winget install Google.Chrome 
+  winget install 7zip.7zip 
+  winget install Notepad++.Notepad++ 

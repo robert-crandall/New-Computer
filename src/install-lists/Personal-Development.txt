@@ -1,12 +1,13 @@
 ## Personal-Development.txt
 
 # Development
-	cinst python -y
-	cinst pip -y --allow-empty-checksums
-	cinst git.install -y
-	cinst sqlitebrowser -y
-	cinst git-credential-manager-for-windows -y
-	cinst awscli -y
-	cinst awstools.powershell -y
-	cinst microsoft-windows-terminal -y
-	cinst cascadiacode -y
+	winget install Python.Python 
+	#cinst pip -y
+	winget install Git.Git 
+	#cinst sqlitebrowser -y
+	winget install Microsoft.GitCredentialManagerCore 
+	winget install Amazon.AWSCLI 
+	winget install Microsoft.WindowsTerminal 
+	winget install Postman.Postman
+	winget install GoLang.Go 
+	#cinst cascadiacode -y
