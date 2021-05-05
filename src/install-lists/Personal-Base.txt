@@ -8,10 +8,11 @@
 	winget install MPC-HC.MPC-HC 
 	winget install Microsoft.Powertoys
 	winget install AntibodySoftware.WizTree 
+	winget install HandyOrg.HandyWinget-GUI
 
 # Runtimes
 	winget install Oracle.JavaRuntimeEnvironment 
-    winget install Microsoft.VC++2015Redist-x64
+    	winget install Microsoft.VC++2015Redist-x64
 	winget install Microsoft.VC++2017Redist-x64
 	winget install Microsoft.VC++2015-2019Redist-x64
 	winget install Microsoft.VC++2012Redist-x64
