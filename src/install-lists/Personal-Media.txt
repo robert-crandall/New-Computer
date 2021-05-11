@@ -4,7 +4,8 @@
 	# winget install LancelotSoftware.MediaFileManager  ## Trying powertoys instead
 
 # Digital entertainment
-	# winget install calibre.calibre  # Don't need this on most machines
+	winget install calibre.calibre
+	winget install Adobe.AdobeDigitalEditions
 	winget install thehandbraketeam.handbrake 
 	# cinst ffmpeg -y
 	winget install MKVToolNix.MKVToolNix 
