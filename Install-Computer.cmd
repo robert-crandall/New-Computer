@@ -7,6 +7,7 @@ setlocal
 : Change current directory to script location - useful for including .ps1 files
 cd %~dp0
 : Invoke this file as powershell expression
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 powershell -executionpolicy bypass -Command "Invoke-Expression $([System.IO.File]::ReadAllText('%~f0'))"
 : Restore environment variables present before setlocal and restore current directory
 endlocal
@@ -31,7 +32,7 @@ goto:eof
 
 
   # List of sources for this machine
-  $sources = @("https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Basic-Computer.txt"
+  $sources = @("https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Basic-Computer.txt"
   )
   
   $continue=$false
@@ -43,7 +44,7 @@ goto:eof
        Y {
          $continue=$true
          Write-host "Getting personal lists"; 
-         $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Base.txt"
+         $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Base.txt"
          } 
       Default {Write-Host "No, stopping other prompts"} 
      } 
@@ -56,7 +57,7 @@ goto:eof
           { 
             Y {
               Write-host "Getting media lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Media.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Media.txt"
               } 
             Default {Write-Host "Skipping media lists"} 
           } 
@@ -67,7 +68,7 @@ goto:eof
           { 
             Y {
               Write-host "Getting engineering lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Office.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Office.txt"
               } 
             Default {Write-Host "Skipping engineering lists"} 
           } 
@@ -78,7 +79,7 @@ goto:eof
           { 
             Y {
               Write-host "Getting development lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Development.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Development.txt"
               } 
             Default {Write-Host "Skipping development lists"} 
           } 
@@ -89,7 +90,7 @@ goto:eof
           { 
             Y {
               Write-host "Getting gaming lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Gaming.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Gaming.txt"
               } 
             Default {Write-Host "Skipping gaming lists"} 
           } 
@@ -100,16 +101,16 @@ goto:eof
           { 
             Y {
 	      Write-host "Getting WSL lists"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-WSL.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-WSL.txt"
 	       } 
             Default {Write-Host "Skipping WSL"} 
           } 
 
           Write-host "Finally, getting finalize list"; 
-              $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/processes/finalize.txt"
+              $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/processes/finalize.txt"
 			  
               
-          $sources += "https://raw.githubusercontent.com/iRobie/New-Computer/master/src/install-lists/Personal-Settings.txt"
+          $sources += "https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/install-lists/Personal-Settings.txt"
 
      } # If continue
 
@@ -118,13 +119,13 @@ goto:eof
   {
     add-content $BoxstarterFile -value ((new-object net.webclient).DownloadString($source))
   }
-  
+   
   # Run the install
   powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$BoxstarterFile"
 
   # Output any errors
   $DesktopPath = [Environment]::GetFolderPath("Desktop")
-  #Select-String -Path C:\ProgramData\chocolatey\logs\choco.summary.log -pattern "\[ERROR\]" -AllMatches | Foreach {$_.Line} > $DesktopPath\chocolatey_errors.log
+  Select-String -Path C:\ProgramData\chocolatey\logs\choco.summary.log -pattern "\[ERROR\]" -AllMatches | Foreach {$_.Line} > $DesktopPath\chocolatey_errors.log
 
 ## List of manual installs
 # Dism /online /enable-feature /featurename:NetFx3 /All /Source:E:\sources\sxs /LimitAccess

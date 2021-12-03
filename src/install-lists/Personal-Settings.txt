@@ -12,11 +12,11 @@
 	Write-host "Step 1 - More Win10Tweaks"
 	Invoke-WebRequest 'https://raw.githubusercontent.com/Disassembler0/Win10-Initial-Setup-Script/master/Win10.ps1' -OutFile 'C:\tools\Win10-Initial-Setup-Script.ps1'
 	Invoke-WebRequest 'https://raw.githubusercontent.com/Disassembler0/Win10-Initial-Setup-Script/master/Win10.psm1' -OutFile 'C:\tools\Win10-Initial-Setup-Script.psm1'
-	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
+	Invoke-WebRequest 'https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/tweaks/personal-tweaks.txt' -OutFile 'C:\tools\personal-tweaks.txt'
 
 	powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\tools\Win10-Initial-Setup-Script.ps1" -include "C:\tools\Win10-Initial-Setup-Script.psm1" -preset "c:\tools\personal-tweaks.txt"
 
 	Write-host "Step 2 - VSCode"
-	Invoke-WebRequest 'https://raw.githubusercontent.com/iRobie/New-Computer/master/src/tweaks/vscode-installs.ps1' -OutFile 'C:\tools\vscode-installs.ps1'
+	Invoke-WebRequest 'https://raw.githubusercontent.com/robert-crandall/New-Computer/master/src/tweaks/vscode-installs.ps1' -OutFile 'C:\tools\vscode-installs.ps1'
 
 	powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\tools\vscode-installs.ps1"

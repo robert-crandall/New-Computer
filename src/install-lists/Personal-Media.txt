@@ -6,8 +6,7 @@
 # Digital entertainment
 	winget install calibre.calibre
 	winget install Adobe.AdobeDigitalEditions
-	winget install thehandbraketeam.handbrake 
-	# cinst ffmpeg -y
+	cinst ffmpeg -y
 	winget install MKVToolNix.MKVToolNix 
 	# cinst youtube-dl -y
 	winget install MediaArea.MediaInfo 

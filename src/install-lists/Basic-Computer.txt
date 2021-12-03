@@ -8,6 +8,5 @@
   winget install Microsoft.dotNetFramework 
 
 #Core utilities
-  winget install Google.Chrome 
   winget install 7zip.7zip 
   winget install Notepad++.Notepad++ 

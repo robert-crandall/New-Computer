@@ -2,12 +2,9 @@
 
 # Development
 	winget install Python.Python 
-	#cinst pip -y
+	cinst pip -y
 	winget install Git.Git 
 	#cinst sqlitebrowser -y
 	winget install Microsoft.GitCredentialManagerCore 
-	winget install Amazon.AWSCLI 
 	winget install Microsoft.WindowsTerminal 
-	winget install Postman.Postman
-	winget install GoLang.Go 
-	#cinst cascadiacode -y
+	cinst cascadiacode -y
