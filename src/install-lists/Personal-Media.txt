@@ -11,6 +11,7 @@
 	# cinst youtube-dl -y
 	winget install MediaArea.MediaInfo 
 	winget install MediaArea.MediaInfo-GUI 
+	winget install --id=HandBrake.HandBrake  -e
 
 	
 ## Add Handbrake to system path
