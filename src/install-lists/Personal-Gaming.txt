@@ -1,6 +1,6 @@
 ## Personal-Gaming.txt
 
 # Game stuff
-	winget install Microsoft.DirectX
-	winget install Valve.Steam
-	winget install EpicGames.EpicGamesLauncher 
+	winget install --id=Microsoft.DirectX  -e
+	winget install --id=Valve.Steam -e
+	winget install --id=EpicGames.EpicGamesLauncher -e
