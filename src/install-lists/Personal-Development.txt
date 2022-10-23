@@ -1,10 +1,9 @@
 ## Personal-Development.txt
 
 # Development
-	winget install Python.Python 
+	winget install --id=Python.Python.3.10  -e 
 	cinst pip -y
-	winget install Git.Git 
-	#cinst sqlitebrowser -y
-	winget install Microsoft.GitCredentialManagerCore 
-	winget install Microsoft.WindowsTerminal 
+	winget install --id=Git.Git -e
+	winget install --id=Microsoft.GitCredentialManagerCore -e
+	winget install --id=Microsoft.WindowsTerminal -e
 	cinst cascadiacode -y
