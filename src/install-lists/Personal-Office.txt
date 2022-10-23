@@ -2,7 +2,7 @@
 
 # Utilities
 	# cinst rsat -y
-	winget install SlackTechnologies.Slack
-	winget install Microsoft.Teams 
+	winget install --id=SlackTechnologies.Slack -e
+	winget install --id=Microsoft.Teams -e
 	# cinst office365proplus -y
 	# cinst fiddler -y
