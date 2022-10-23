@@ -1,17 +1,13 @@
 ## Personal-Media.txt
 
-# File Renamer
-	# winget install LancelotSoftware.MediaFileManager  ## Trying powertoys instead
-
 # Digital entertainment
-	winget install calibre.calibre
-	winget install Adobe.AdobeDigitalEditions
+	winget install --id=calibre.calibre -e
+	winget install Adobe.AdobeDigitalEditions -e
 	cinst ffmpeg -y
-	winget install MKVToolNix.MKVToolNix 
-	# cinst youtube-dl -y
-	winget install MediaArea.MediaInfo 
-	winget install MediaArea.MediaInfo-GUI 
-	winget install --id=HandBrake.HandBrake  -e
+	winget install --id=MKVToolNix.MKVToolNix -e
+	winget install --id=MediaArea.MediaInfo -e
+	winget install --id=MediaArea.MediaInfo-GUI -e
+	winget install --id=HandBrake.HandBrake -e
 
 	
 ## Add Handbrake to system path
