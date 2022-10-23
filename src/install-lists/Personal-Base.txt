@@ -3,16 +3,16 @@
 ## These are files I use regardless of what computer I'm on, but they aren't for computers I support 
 
 # Utilities
-	winget install Microsoft.VisualStudioCode
-	winget install namazso.OpenHashTab 
-	winget install MPC-HC.MPC-HC 
-	winget install Microsoft.Powertoys
-	winget install AntibodySoftware.WizTree 
+	winget install --id=Microsoft.VisualStudioCode -e
+	winget install --id=namazso.OpenHashTab -e
+	winget install --id=MPC-HC.MPC-HC -e
+	winget install --id=Microsoft.Powertoys -e
+	winget install --id=AntibodySoftware.WizTree -e
 
 # Runtimes
-	winget install Oracle.JavaRuntimeEnvironment 
-	winget install Microsoft.VC++2015Redist-x64
-	winget install Microsoft.VC++2017Redist-x64
-	winget install Microsoft.VC++2015-2019Redist-x64
-	winget install Microsoft.VC++2012Redist-x64
-	winget install Microsoft.VC++2013Redist-x64 
+	winget install --id=Oracle.JavaRuntimeEnvironment -e
+	winget install --id=Microsoft.VC++2015Redist-x64 -e
+	winget install --id=Microsoft.VC++2017Redist-x64 -e
+	winget install --id=Microsoft.VC++2015-2019Redist-x64 -e
+	winget install --id=Microsoft.VC++2012Redist-x64 -e
+	winget install --id=Microsoft.VC++2013Redist-x64 -e
