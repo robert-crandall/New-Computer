@@ -3,10 +3,10 @@
 ## No matter what computer, these are useful tools to have
 # Install DotNet
   DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /NoRestart
-  winget install Microsoft.dotnet
-  winget install Microsoft.dotnetRuntime 
-  winget install Microsoft.dotNetFramework 
+  winget install -e --id Microsoft.dotnet
+  winget install -e --id Microsoft.dotnetRuntime 
+  winget install -e --id Microsoft.dotNetFramework 
 
 #Core utilities
-  winget install 7zip.7zip 
-  winget install Notepad++.Notepad++ 
+  winget install -e --id 7zip.7zip 
+  winget install -e --id Notepad++.Notepad++ 
