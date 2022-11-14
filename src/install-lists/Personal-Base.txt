@@ -5,7 +5,7 @@
 # Utilities
 	winget install --id=Microsoft.VisualStudioCode -e
 	winget install --id=namazso.OpenHashTab -e
-	winget install --id=MPC-HC.MPC-HC -e
+	winget install --id=clsid2.mpc-hc  -e
 	winget install --id=Microsoft.Powertoys -e
 	winget install --id=AntibodySoftware.WizTree -e
 
