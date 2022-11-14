@@ -10,3 +10,6 @@
 #Core utilities
   winget install -e --id 7zip.7zip 
   winget install -e --id Notepad++.Notepad++ 
+  
+# For Windows 11:
+  # winget install startallback
